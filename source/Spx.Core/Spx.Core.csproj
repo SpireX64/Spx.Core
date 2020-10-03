@@ -5,6 +5,16 @@
     <RootNamespace>Spx</RootNamespace>
     <LangVersion>8</LangVersion>
     <Nullable>enable</Nullable>
+    <PackageVersion>0.0.1</PackageVersion>
+    <Title>SpireX's Core Library</Title>
+    <Authors>SpireX</Authors>
+    <PackageProjectUrl>https://github.com/SpireX64/Spx.Core</PackageProjectUrl>
+    <PackageLicenseUrl>https://opensource.org/licenses/BSD-3-Clause</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/SpireX64/Spx.Core</RepositoryUrl>
+    <RepositoryType>public</RepositoryType>
+    <PackageTags>spirex, spx, net, core, util</PackageTags>
+    <AssemblyVersion>0.0.1</AssemblyVersion>
+    <FileVersion>0.0.1</FileVersion>
   </PropertyGroup>
 
 </Project>
