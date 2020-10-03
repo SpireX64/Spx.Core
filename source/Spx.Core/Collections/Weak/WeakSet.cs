@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 namespace Spx.Collections.Weak
@@ -49,9 +50,11 @@ namespace Spx.Collections.Weak
 
         public void CopyTo(T[] array, int arrayIndex)
         {
+            #pragma warning disable 8603
             _realSet.Select(weakRef => weakRef is null || !weakRef.TryGetTarget(out var item) ? null : item)
                 .ToArray()
                 .CopyTo(array, arrayIndex);
+            #pragma warning restore 8603
         }
 
         public bool Remove(T item)
