@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Spx.Collections.Linq;
 using Xunit;
 
 namespace Spx.Linq.UnitTests
@@ -56,7 +57,7 @@ namespace Spx.Linq.UnitTests
             
             // -- Act & Assert:
             Assert.Throws<ArgumentNullException>(
-                () => enumerable.FindPosition(e => e.Item1 == 1));
+                () => enumerable!.FindPosition(e => e.Item1 == 1));
         }
 
         [Fact]
@@ -68,7 +69,7 @@ namespace Spx.Linq.UnitTests
             
             // -- Act & Assert:
             Assert.Throws<ArgumentNullException>(
-                () => enumerable.FindPosition(null));
+                () => enumerable.FindPosition(null!));
         }
         
         [Fact]
@@ -115,7 +116,7 @@ namespace Spx.Linq.UnitTests
             
             // -- Act & Assert:
             Assert.Throws<ArgumentNullException>(
-                () => enumerable.PositionOf(2));
+                () => enumerable!.PositionOf(2));
         }
     }
 }

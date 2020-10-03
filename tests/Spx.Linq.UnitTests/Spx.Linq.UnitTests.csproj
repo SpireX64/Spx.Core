@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\source\Spx.Linq\Spx.Linq.csproj" />
+    <ProjectReference Include="..\..\source\Spx.Core\Spx.Core.csproj" />
   </ItemGroup>
 
 </Project>

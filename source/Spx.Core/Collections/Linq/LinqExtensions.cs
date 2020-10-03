@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Spx.Linq
+namespace Spx.Collections.Linq
 {
     public static class LinqExtensions
     {

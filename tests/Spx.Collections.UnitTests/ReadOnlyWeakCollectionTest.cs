@@ -97,6 +97,7 @@ namespace Spx.Collections.UnitTests
             // ---- Act
             enumerator.MoveNext();
             var itemFromColletion = enumerator.Current;
+            enumerator.Dispose();
 
             // ---- Assert
             Assert.Equal(item, itemFromColletion);
